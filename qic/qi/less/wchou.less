@@ -1,0 +1,224 @@
+@import "../css/reset.css";
+@bg: "../img/bg01.jpg";
+@bg1: "../img/y10.png";
+@bg11: "../img/y20.png";
+@bg111: "../img/y30.png";
+@bg2: "../img/shuru2.jpg";
+@hd: "../img/hd.png";
+@btn: "../img/btn01.png";
+
+.bgsize(@bgx: 100%, @bgy: 100%) {
+    background-size: @bgx @bgy;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+.bigb {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    display: -webkit-flex;
+    -ms-flex-direction: column;
+}
+
+.header{
+    height: 0.92rem;
+    background: url(@hd) repeat-y 0 0;
+    .bgsize;
+    text-align: center;
+    overflow: hidden;
+    .fan{
+        font-size:.36rem;
+        line-height: .92rem;
+        color:#f1f2f4;
+        font-weight: bold;
+        float: left;
+        margin-left: .21rem;
+    }
+    .tit{
+        font-size:.38rem;
+        line-height: .92rem;
+        color:#f1f2f4;
+        font-weight: bold;
+    }
+    .ss{
+        font-size:.1rem;
+        line-height: .92rem;
+        color:#f1f2f4;
+        font-weight: bold;
+        float: right;
+        margin-right: .28rem;
+    }
+}
+.page {
+    flex: 1;
+    padding: 0 .44rem;
+    background: url(@bg) no-repeat 0 0;
+    .bgsize;
+}
+
+h1 {
+    height: .5rem;
+    line-height: .5rem;
+    font-size: .5rem;
+    font-weight: bold;
+    color: #c90128;
+    text-align: center;
+    margin: .36rem auto .26rem;
+}
+
+.js {
+    line-height: .4rem;
+    font-size: .28rem;
+    margin-bottom: .16rem;
+    color: #656368;
+}
+
+.jp {
+    height: 3.21rem;
+    background: url(@bg1) no-repeat 0 0;
+    margin-bottom: .22rem;
+    .bgsize;
+    display: none
+}
+.jp1 {
+    height: 3.21rem;
+    background: url(@bg11) no-repeat 0 0;
+    margin-bottom: .22rem;
+    display: none;
+    .bgsize;
+}
+.jp11 {
+    height: 3.21rem;
+    background: url(@bg111) no-repeat 0 0;
+    margin-bottom: .22rem;
+    display: none;
+    .bgsize;
+}
+
+.ts {
+    line-height: .4rem;
+    font-size: .28rem;
+    margin-bottom: .14rem;
+    color: #656368;
+}
+.tel {
+    width: 100%;
+    height: .86rem;
+    background: url(@bg2) no-repeat 0 0;
+    .bgsize;
+    margin-bottom: .16rem;
+    position: relative;
+
+    input {
+        position: absolute;
+        width:4.6rem;
+        right: 0;
+        font-size: .28rem;
+        height: .86rem;
+        background: transparent;
+    }
+}
+.tj {
+    width: 4.34rem;
+    height: .97rem;
+    font-size: .38rem;
+    font-weight: bold;
+    color: #fff;
+    font-family: '宋体';
+    text-align: center;
+    font-style: italic;
+    line-height: .97rem;
+    text-shadow: .02rem .02rem .02rem #be80af;
+    background: url(@btn) no-repeat 0 0;
+    margin: 0 auto .36rem;
+    .bgsize;
+}
+.fen {
+    text-align: center;
+    height: .68rem;
+    line-height: .68rem;
+    font-size: .3rem;
+    color: #616a6f;
+
+    span {
+        img {
+            margin: 0 .12rem;
+            width: .68rem;
+            height: .68rem;
+        }
+    }
+}
+
+.mark {
+    z-index: 10;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+    display: none;
+}
+
+.qxian {
+    width: 5.98rem;
+    height: 5.1rem;
+    background: #efefef;
+    position: fixed;
+    left: 50%;
+    top: 1.5rem;
+    margin-left: -2.99rem;
+    z-index: 11;
+    border: .08rem solid #012869;
+    font-weight: bold;
+    box-sizing: border-box;
+    border-radius: .25rem;
+    padding: 0 .19rem .38rem;
+
+    h2 {
+        font-size: .66rem;
+        line-height: .66rem;
+        color: #013e9b;
+        margin: .68rem auto .42rem;
+        font-weight: 900;
+        text-align: center;
+    }
+
+    p {
+        font-size: .38rem;
+        line-height: .6rem;
+        color: #676767;
+        margin: 0 auto .35rem;
+        font-weight: 500
+    }
+
+    div {
+        width: 4.34rem;
+        height: .97rem;
+        font-size: .44rem;
+        font-weight: bold;
+        color: #fff;
+        font-family: '宋体';
+        text-align: center;
+        font-style: italic;
+        line-height: .97rem;
+        text-shadow: .02rem .02rem .02rem #be80af;
+        background: url(@btn) no-repeat 0 0;
+        .bgsize;
+        margin: 0 auto;
+    }
+
+    div:first-of-type {
+        margin-bottom: 0.18rem;
+    }
+
+    display: none;
+}

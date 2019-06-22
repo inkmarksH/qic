@@ -1,0 +1,260 @@
+@import "../css/reset.css";
+@bg: "../img/bg01.jpg";
+@hd: "../img/hd.png";
+@bg1: "../img/bg02.jpg";
+@bg2: "../img/msyl.png";
+@btn: "../img/btn01.png";
+
+.bgsize(@bgx: 100%, @bgy: 100%) {
+    background-size: @bgx @bgy;
+}
+
+.block-center {
+    margin: 0 auto;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+
+.bigb {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    display: -webkit-flex;
+    -ms-flex-direction: column;
+}
+
+.header{
+    height: 0.92rem;
+    background: url(@hd) repeat-y 0 0;
+    .bgsize;
+    text-align: center;
+    overflow: hidden;
+    .fan{
+        font-size:.36rem;
+        line-height: .92rem;
+        color:#f1f2f4;
+        font-weight: bold;
+        float: left;
+        margin-left: .21rem;
+    }
+    .tit{
+        font-size:.38rem;
+        line-height: .92rem;
+        color:#f1f2f4;
+        font-weight: bold;
+    }
+    .ss{
+        font-size:.1rem;
+        line-height: .92rem;
+        color:#f1f2f4;
+        font-weight: bold;
+        float: right;
+        margin-right: .28rem;
+    }
+}
+
+.page {
+    flex: 1;
+    height: 100%;
+    width: 100%;
+    background: url(@bg) no-repeat 0 0;
+    .bgsize;
+}
+
+.head {
+    height: 2.71rem;
+    background: url(@bg1) no-repeat 0 0;
+    .bgsize;
+    margin: 0 auto;
+    margin-bottom: .28rem;
+}
+
+.banner {
+    text-align: center;
+    height: 1.98rem;
+
+    div {
+        width: 5.09rem;
+        height: 1.98rem;
+        background: url(@bg2) no-repeat 0 0;
+        .bgsize;
+        .block-center;
+    }
+
+    margin-bottom: .51rem;
+}
+
+.xc {
+    text-align: center;
+    height: .97rem;
+
+    a {
+        display: block;
+        text-align: center;
+        width: 4.33rem;
+        height: .97rem;
+        font-size: .38rem;
+        font-weight: bold;
+        color: #fff;
+        font-family: '宋体';
+        font-style: italic;
+        line-height: .97rem;
+        text-shadow: -.02rem -.02rem .02rem #be80af;
+        background: url(@btn) no-repeat 0 0;
+        .bgsize;
+        .block-center;
+    }
+
+    margin-bottom: .15rem;
+}
+
+.fx {
+    height: .97rem;
+    text-align: center;
+
+    a {
+        display: block;
+        text-align: center;
+        width: 4.33rem;
+        height: .97rem;
+        font-size: .38rem;
+        font-weight: bold;
+        color: #fff;
+        font-family: '宋体';
+        font-style: italic;
+        line-height: .97rem;
+        text-shadow: .02rem .02rem .02rem #be80af;
+        background: url(@btn) no-repeat 0 0;
+        .bgsize;
+        .block-center;
+    }
+
+    margin-bottom: .34rem;
+}
+
+.hd {
+    text-align: center;
+    height: .4rem;
+
+    a {
+        font-size: .4rem;
+        color: #013e9b;
+        text-decoration: underline;
+        font-family: '宋体';
+        font-style: italic;
+        font-weight: bold;
+    }
+}
+
+.mark {
+    z-index: 10;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+    display: none;
+}
+
+.sm {
+    width: 5.98rem;
+    height: 7.24rem;
+    background: #efefef;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    margin-left: -2.99rem;
+    margin-top: -3.62rem;
+    z-index: 11;
+    border: .08rem solid #012869;
+    box-sizing: border-box;
+    border-radius: .25rem;
+    padding: .37rem .32rem;
+
+    h4 {
+        height: .28rem;
+        font-size: .28rem;
+        color: #042b86;
+        font-weight: 900;
+        margin-top: .1rem;
+        margin-bottom: .18rem;
+    }
+
+    p {
+        font-size: .24rem;
+        line-height: .42rem;
+        color: #5e5e5e;
+        text-indent: 2em;
+    }
+
+    p:last-of-type {
+        margin-bottom: 0.18rem;
+    }
+
+    .chou {
+        width: 4.34rem;
+        height: .97rem;
+        font-size: .38rem;
+        font-weight: bold;
+        color: #fff;
+        font-family: '宋体';
+        text-align: center;
+        font-style: italic;
+        line-height: .97rem;
+        text-shadow: .02rem .02rem .02rem #be80af;
+        background: url(@btn) no-repeat 0 0;
+        .bgsize;
+        .block-center;
+    }
+    display: none;
+}
+.qxian{
+    width: 5.98rem;
+    height: 5.4rem;
+    background: #efefef;
+    position: fixed;
+    left: 50%;
+    top: 45%;
+    margin-left: -2.99rem;
+    margin-top: -3.62rem;
+    z-index: 11;
+    border: .08rem solid #012869;
+    font-weight: bold;
+    box-sizing: border-box;
+    border-radius: .25rem;
+    padding: .38rem .19rem;
+    p {
+        font-size: .36rem;
+        line-height: .58rem;
+        color: #002673;
+        text-align: center
+    }
+    div {
+        width: 4.34rem;
+        height: .97rem;
+        font-size: .38rem;
+        font-weight: bold;
+        color: #fff;
+        font-family: '宋体';
+        text-align: center;
+        font-style: italic;
+        line-height: .97rem;
+        text-shadow: .02rem .02rem .02rem #be80af;
+        background: url(@btn) no-repeat 0 0;
+        .bgsize;
+        .block-center;
+    }
+    div:first-of-type {
+        margin-bottom: 0.18rem;
+    }
+    display: none;
+}

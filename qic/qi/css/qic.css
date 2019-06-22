@@ -1,0 +1,245 @@
+@import "../css/reset.css";
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+.bigb {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  display: -webkit-flex;
+  -ms-flex-direction: column;
+}
+.header {
+  height: 0.92rem;
+  background: url("../img/hd.png") repeat-y 0 0;
+  background-size: 100% 100%;
+  text-align: center;
+  overflow: hidden;
+}
+.header .fan {
+  font-size: .36rem;
+  line-height: .92rem;
+  color: #f1f2f4;
+  font-weight: bold;
+  float: left;
+  margin-left: .21rem;
+}
+.header .tit {
+  font-size: .38rem;
+  line-height: .92rem;
+  color: #f1f2f4;
+  font-weight: bold;
+}
+.header .ss {
+  font-size: .1rem;
+  line-height: .92rem;
+  color: #f1f2f4;
+  font-weight: bold;
+  float: right;
+  margin-right: .28rem;
+}
+.page {
+  flex: 1;
+  background: url("../img/bg01.jpg") no-repeat 0 0;
+  background-size: 100% 100%;
+  padding: 0 .21rem;
+  height: 100%;
+}
+header {
+  width: 3.12rem;
+  height: .75rem;
+  background: url("../img/qckhj.png") no-repeat 0 0;
+  background-size: 100% 100%;
+  margin: 0.55rem auto 0.22rem;
+}
+.sms {
+  font-size: .24rem;
+  line-height: .44rem;
+  color: #9daeb8;
+  margin-bottom: .17rem;
+}
+.user {
+  width: 100%;
+  height: .86rem;
+  background: url("../img/shuru1.jpg") no-repeat 0 0;
+  background-size: 100% 100%;
+  position: relative;
+  margin-bottom: .05rem;
+}
+.user input {
+  font-size: .28rem;
+  height: .86rem;
+  margin-left: .97rem;
+  background: transparent;
+  position: absolute;
+  width: 4.6rem;
+  right: 0;
+}
+.tel {
+  width: 100%;
+  height: .86rem;
+  background: url("../img/shuru2.jpg") no-repeat 0 0;
+  background-size: 100% 100%;
+  position: relative;
+  margin-bottom: .34rem;
+}
+.tel input {
+  font-size: .28rem;
+  height: .86rem;
+  position: absolute;
+  width: 4.6rem;
+  right: 0;
+  background: transparent;
+}
+.tj {
+  width: 4.34rem;
+  height: .97rem;
+  font-size: .38rem;
+  font-weight: bold;
+  color: #fff;
+  font-family: '宋体';
+  text-align: center;
+  font-style: italic;
+  line-height: .97rem;
+  text-shadow: .02rem .02rem .02rem #be80af;
+  background: url("../img/btn01.png") no-repeat 0 0;
+  margin: 0 auto .28rem;
+  background-size: 100% 100%;
+}
+.hd {
+  text-align: center;
+  height: .4rem;
+  margin-bottom: .46rem;
+}
+.hd a {
+  font-size: .4rem;
+  color: #013e9b;
+  text-decoration: underline;
+  font-family: '宋体';
+  font-style: italic;
+  font-weight: bold;
+}
+.fen {
+  text-align: center;
+  height: .68rem;
+  line-height: .68rem;
+  font-size: .3rem;
+  color: #616a6f;
+}
+.fen span img {
+  margin: 0 .12rem;
+  width: .68rem;
+  height: .68rem;
+}
+.mark {
+  z-index: 10;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+  display: none;
+}
+.sm {
+  width: 5.98rem;
+  height: 8.22rem;
+  background: #efefef;
+  position: fixed;
+  left: 50%;
+  top: .48rem;
+  margin-left: -2.99rem;
+  z-index: 11;
+  border: .08rem solid #012869;
+  box-sizing: border-box;
+  border-radius: .25rem;
+  padding: .37rem .32rem;
+  display: none;
+}
+.sm h4 {
+  height: .28rem;
+  font-size: .28rem;
+  color: #042b86;
+  font-weight: 900;
+  margin-top: .1rem;
+  margin-bottom: .18rem;
+}
+.sm p {
+  font-size: .24rem;
+  line-height: .42rem;
+  color: #5e5e5e;
+  text-indent: -1.5em;
+  margin: 0 .3rem;
+}
+.sm p:last-of-type {
+  margin-bottom: 0.18rem;
+}
+.sm .chou {
+  width: 4.34rem;
+  height: .97rem;
+  font-size: .38rem;
+  font-weight: bold;
+  color: #fff;
+  font-family: '宋体';
+  text-align: center;
+  font-style: italic;
+  line-height: .97rem;
+  text-shadow: .02rem .02rem .02rem #be80af;
+  background: url("../img/btn01.png") no-repeat 0 0;
+  background-size: 100% 100%;
+  margin: 0 auto;
+}
+.qxian {
+  width: 5.98rem;
+  height: 5.1rem;
+  background: #efefef;
+  position: fixed;
+  left: 50%;
+  top: 1.5rem;
+  margin-left: -2.99rem;
+  z-index: 11;
+  border: .08rem solid #012869;
+  font-weight: bold;
+  box-sizing: border-box;
+  border-radius: .25rem;
+  padding: 0 .19rem .38rem;
+  display: none;
+}
+.qxian h2 {
+  font-size: .66rem;
+  line-height: .66rem;
+  color: #013e9b;
+  margin: .68rem auto .42rem;
+  font-weight: 900;
+  text-align: center;
+}
+.qxian p {
+  font-size: .38rem;
+  line-height: .6rem;
+  color: #676767;
+  margin: 0 auto .35rem;
+  font-weight: 500;
+}
+.qxian div {
+  width: 4.34rem;
+  height: .97rem;
+  font-size: .44rem;
+  font-weight: bold;
+  color: #fff;
+  font-family: '宋体';
+  text-align: center;
+  font-style: italic;
+  line-height: .97rem;
+  text-shadow: .02rem .02rem .02rem #be80af;
+  background: url("../img/btn01.png") no-repeat 0 0;
+  background-size: 100% 100%;
+  margin: 0 auto;
+}
+.qxian div:first-of-type {
+  margin-bottom: 0.18rem;
+}

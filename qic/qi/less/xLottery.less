@@ -1,0 +1,104 @@
+@import "../css/reset.css";
+@bg1: "../img/bg02.jpg";
+@hd: "../img/hd.png";
+@bg: "../img/bg01.jpg";
+
+.bgsize(@bgx: 100%, @bgy: 100%) {
+    background-size: @bgx @bgy;
+}
+
+html,
+body {
+    height: 100%;
+}
+.bigb {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    display: -webkit-flex;
+    -ms-flex-direction: column;
+}
+
+.header{
+    height: 0.92rem;
+    background: url(@hd) repeat-y 0 0;
+    .bgsize;
+    text-align: center;
+    overflow: hidden;
+    .fan{
+        font-size:.36rem;
+        line-height: .92rem;
+        color:#f1f2f4;
+        font-weight: bold;
+        float: left;
+        margin-left: .21rem;
+    }
+    .tit{
+        font-size:.38rem;
+        line-height: .92rem;
+        color:#f1f2f4;
+        font-weight: bold;
+    }
+    .ss{
+        font-size:.1rem;
+        line-height: .92rem;
+        color:#f1f2f4;
+        font-weight: bold;
+        float: right;
+        margin-right: .28rem;
+    }
+}
+.page {
+    flex: 1;
+    background: url(@bg) no-repeat 0 0;
+    .bgsize;
+}
+
+.head {
+    height: 2.71rem;
+    background: url(@bg1) no-repeat 0 0;
+    .bgsize;
+    margin: 0 auto;
+    margin-bottom: .39rem;
+}
+
+.title {
+    height: .5rem;
+    font-size: .5rem;
+    color: #012869;
+    font-weight: bold;
+    text-align: center;
+}
+
+.msg {
+    color: #586063;
+    height: .64rem;
+    font-size: .28rem;
+    line-height: .64rem;
+    text-align: center;
+    font-weight: 300;
+    margin-bottom: .07rem;
+}
+.box{
+    text-align: center;
+}
+
+.list {
+    padding: 0 0.19rem;
+    margin:-0.02rem;
+    display: inline-block;
+    overflow: auto;
+    li {
+        height: 2.77rem;
+        width: 1.99rem;
+        float:left;
+        margin-right: 0.02rem;
+        perspective: 500px;
+
+        img {
+            height: 2.77rem;
+            width: 1.99rem;
+        }
+    }
+}

@@ -1,0 +1,103 @@
+@import "../css/reset.css";
+.block-center {
+  margin: 0 auto;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+.bigb {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  display: -webkit-flex;
+  -ms-flex-direction: column;
+}
+.header {
+  height: 0.92rem;
+  background: url("../img/hd.png") repeat-y 0 0;
+  background-size: 100% 100%;
+  text-align: center;
+  overflow: hidden;
+}
+.header .fan {
+  font-size: .36rem;
+  line-height: .92rem;
+  color: #f1f2f4;
+  font-weight: bold;
+  float: left;
+  margin-left: .21rem;
+}
+.header .tit {
+  font-size: .38rem;
+  line-height: .92rem;
+  color: #f1f2f4;
+  font-weight: bold;
+}
+.header .ss {
+  font-size: .1rem;
+  line-height: .92rem;
+  color: #f1f2f4;
+  font-weight: bold;
+  float: right;
+  margin-right: .28rem;
+}
+.page {
+  background: url("../img/bg01.jpg") no-repeat 0 0;
+  flex: 1;
+  background-size: 100% 100%;
+  height: 100%;
+  width: 100%;
+}
+.head {
+  width: 100%;
+  height: 2.71rem;
+  background: url("../img/bg02.jpg") no-repeat 0 0;
+  background-size: 100% 100%;
+  margin: 0 auto;
+  margin-bottom: .28rem;
+}
+.sorry {
+  padding: 0 .32rem 0 .42rem;
+}
+.sorry h1 {
+  height: .66rem;
+  line-height: .66rem;
+  font-size: .66rem;
+  font-weight: bold;
+  color: #002772;
+  text-align: center;
+  margin: .49rem auto .24rem;
+}
+.sorry p {
+  line-height: .6rem;
+  font-size: .32rem;
+  color: #646464;
+}
+.sorrys {
+  padding: 0 0.36rem 0 0.5rem;
+}
+.sorrys h1 {
+  height: .66rem;
+  line-height: .66rem;
+  font-size: .66rem;
+  font-weight: bold;
+  color: #bf0b16;
+  text-align: center;
+  margin: .6rem auto .24rem;
+}
+.sorrys p {
+  line-height: .68rem;
+  font-size: .35rem;
+  color: #646464;
+}
+.sorrys p span {
+  color: #11367c;
+  font-weight: bold;
+}
+.sorrys p .num {
+  font-family: '微软雅黑';
+  font-weight: 900;
+}

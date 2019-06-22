@@ -1,0 +1,90 @@
+@import "../css/reset.css";
+html,
+body {
+  height: 100%;
+}
+.bigb {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  display: -webkit-flex;
+  -ms-flex-direction: column;
+}
+.header {
+  height: 0.92rem;
+  background: url("../img/hd.png") repeat-y 0 0;
+  background-size: 100% 100%;
+  text-align: center;
+  overflow: hidden;
+}
+.header .fan {
+  font-size: .36rem;
+  line-height: .92rem;
+  color: #f1f2f4;
+  font-weight: bold;
+  float: left;
+  margin-left: .21rem;
+}
+.header .tit {
+  font-size: .38rem;
+  line-height: .92rem;
+  color: #f1f2f4;
+  font-weight: bold;
+}
+.header .ss {
+  font-size: .1rem;
+  line-height: .92rem;
+  color: #f1f2f4;
+  font-weight: bold;
+  float: right;
+  margin-right: .28rem;
+}
+.page {
+  flex: 1;
+  background: url("../img/bg01.jpg") no-repeat 0 0;
+  background-size: 100% 100%;
+}
+.head {
+  height: 2.71rem;
+  background: url("../img/bg02.jpg") no-repeat 0 0;
+  background-size: 100% 100%;
+  margin: 0 auto;
+  margin-bottom: .39rem;
+}
+.title {
+  height: .5rem;
+  font-size: .5rem;
+  color: #012869;
+  font-weight: bold;
+  text-align: center;
+}
+.msg {
+  color: #586063;
+  height: .64rem;
+  font-size: .28rem;
+  line-height: .64rem;
+  text-align: center;
+  font-weight: 300;
+  margin-bottom: .07rem;
+}
+.box {
+  text-align: center;
+}
+.list {
+  padding: 0 0.19rem;
+  margin: -0.02rem;
+  display: inline-block;
+  overflow: auto;
+}
+.list li {
+  height: 2.77rem;
+  width: 1.99rem;
+  float: left;
+  margin-right: 0.02rem;
+  perspective: 500px;
+}
+.list li img {
+  height: 2.77rem;
+  width: 1.99rem;
+}
